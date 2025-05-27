@@ -131,6 +131,14 @@ function renderPaymentForm() {
             </div>`
 }
 
+document.addEventListener("click", function (e) {
+  const form = document.getElementById("form");
+  
+  if (form && !form.contains(e.target) && !e.target.matches("#complete-order")) {
+    paymentSection.innerHTML = "";
+  }
+});
+
 function removeOrder(id) {
     orderArray =  orderArray.filter(order => {
         return order.id !== id
