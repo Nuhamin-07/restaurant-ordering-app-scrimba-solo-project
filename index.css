@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+} 
+
+.header{
+    background-image: url("./images/burger2.jpg");
+    background-size: 100%;
+    height: 150px;
+    color: #c8d3e6;
+    padding: 30px 0 0 50px;
+    text-shadow: 0 0 15px #000;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+hr {
+    margin: 0 20px;
+}
+
+.emoji {
+    font-size: 60px;
+}
+
+.second-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#order-btn {
+    border-radius: 50%;
+    border: 1px solid #eee;
+}
+
+.menu-name, .menu-ingredient {
+    margin-bottom: 0;
+}
+
+.remove-btn {
+    border: none;
+}
+
+.order-header {
+    text-align: center;
+}
+
+#complete-order {
+    display: block;
+    width: 96%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.payment-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px #333;
+}
+
+#form-name, #form-card, #form-cvv, #pay-button {
+    width: 300px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+#pay-button, #complete-order, .order-confirmation {
+    background-color: #03fca1;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.order-confirmation {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 0;
+}
